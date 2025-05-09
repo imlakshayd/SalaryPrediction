@@ -31,12 +31,12 @@ The project uses the `Salary_dataset.csv` file located in the `data/` directory.
 ## Project Structure
 
 .
-├── data/
-│ └── Salary_dataset.csv
-├── images/
-│ ├── salary_vs_experience_plot.png
-│ └── cost_vs_iteration_plot.png
-├── main.py
+├── data/\
+│ └── Salary_dataset.csv    
+├── images/\
+│ ├── salary_vs_experience_plot.png\
+│ └── cost_vs_iteration_plot.png\
+├── main.py\
 └── README.md
 
 ## Setup and Installation
