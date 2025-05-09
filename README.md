@@ -30,7 +30,7 @@ The project uses the `Salary_dataset.csv` file located in the `data/` directory.
 
 ## Project Structure
 
-.
+.\
 ├── data/\
 │ └── Salary_dataset.csv    
 ├── images/\
