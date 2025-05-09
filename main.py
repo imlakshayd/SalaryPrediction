@@ -11,7 +11,7 @@ directory = "Data/Salary_dataset.csv"
 
 pd.options.display.max_rows = 100
 df = pd.read_csv(directory, index_col=False)
-
+0
 x = df['YearsExperience'].to_numpy()
 y = df['Salary'].to_numpy()
 
@@ -61,7 +61,7 @@ m, b = 0.0, 0.0
 alpha = 0.005
 iterations = 10000
 
-m_gd, b_gd = descent(alpha, m, b, x, y, iterations)
+m_gd, b_gd, costs = descent(alpha, m, b, x, y, iterations)
 
 m_cf, b_cf = linear_regression(x, y)
 
@@ -82,6 +82,7 @@ print("--- DataFrame ---")
 print(df.to_string(index=False))
 
 
+plt.figure()
 plt.scatter(x, y, label="Data")
 sorted_idx = np.argsort(x)
 plt.plot(x[sorted_idx], y_pred_cf[sorted_idx], linewidth=2, label='Fit')
@@ -89,9 +90,14 @@ plt.xlabel("Years of Experience")
 plt.ylabel("Salary")
 plt.title("Salary vs. Years of Experience")
 plt.grid(True)
-plt.show()
 
-# for α in [0.0005, 0.001, 0.005]:
-#     m_gd, b_gd, costs = descent(α, 0, 0, x, y, 1000)
-#     plt.plot(costs, label=f'α={α}')
-# plt.legend(); plt.show()
+
+plt.figure()
+for alpha in [0.0005, 0.001, 0.005]:
+    m_gd, b_gd, costs = descent(alpha, 0, 0, x, y, 1000)
+    plt.plot(costs, label=f'α={alpha}')
+plt.title('Cost vs. Iteration')
+plt.xlabel("# of Iterations")
+plt.ylabel("Cost")
+plt.legend();
+plt.show()
