@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use("TkAgg")  # This is used to show a plot in another window
 import matplotlib.pyplot as plt
 
-directory = "Data/Salary_dataset.csv"
+directory = "data/Salary_dataset.csv"
 
 pd.options.display.max_rows = 100
 df = pd.read_csv(directory, index_col=False)
@@ -83,7 +83,7 @@ print(df.to_string(index=False))
 
 
 plt.figure()
-plt.scatter(x, y, label="Data")
+plt.scatter(x, y, label="data")
 sorted_idx = np.argsort(x)
 plt.plot(x[sorted_idx], y_pred_cf[sorted_idx], linewidth=2, label='Fit')
 plt.xlabel("Years of Experience")
