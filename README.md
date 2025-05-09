@@ -26,6 +26,7 @@ The project also visualizes the dataset, the fitted regression line, and the con
 ## Dataset
 
 The project uses the `Salary_dataset.csv` file located in the `data/` directory.
+* The dataset was sourced from Kaggle. You can find the specific version used for the Kaggle Notebook at https://www.kaggle.com/datasets/anurgjuyl/simplelinearregression
 *   **YearsExperience**: Independent variable (feature).
 *   **Salary**: Dependent variable (target).
 
