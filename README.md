@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.x-blue.svg" alt="Python 3.x">
+  <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=flat&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/matplotlib-%2311557c.svg?style=flat&logo=matplotlib&logoColor=white" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/Focus-Linear%20Regression-green" alt="Focus: Linear Regression">
+</p>
+
 # Linear Regression: Salary Prediction
 
 This project implements linear regression to predict salary based on years of experience. It demonstrates two approaches for finding the optimal regression line:
